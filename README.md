@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+Александра Шарифуллина
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Домашнее задание 9.1
 
-## Available Scripts
+<h1>React Router</h1>
 
-In the project directory, you can run:
+<h1>Навигационное меню</h1>
 
-### `npm start`
+Необходимо реализовать меню для сайта гоночного такси с пунктами «Главная», «Дрифт-такси», «Time Attack» и «Forza Karting». При переходе на страницу соответствующий пункт меню должен подсветиться:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img src="https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/router/menu/assets/menu.jpg" alt=""/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h2>Описание компонента</h2>
+Компонент должен создавать HTML-разметку вида:
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<i><nаv clаss="menu">
 
-### `npm run build`
+  <а class="menu__item" href="/">Главная</а>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <а class="menu__item" href="/drift">Дрифт-такси</а>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <а class="menu__item" href="/timeattack">Time Attack</а>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  <а clаss="menu__item" href="/forza">Forza Karting</а>
+  
+</nаv></i>
 
-### `npm run eject`
+Активный пункт меню помечается классом menu__item-active.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<h2>Реализация</h2>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Необходимо реализовать компонет Menu.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Воспользуйтесь готовым файлом App.js и стилями css/index.css из данного каталога в качестве отправной точки (замените ими те, что создаются в create-react-app).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<b>Обратите внимание:</b> в файлах App.js расположено несколько компонентов не потому, что так нужно делать, а для вашего удобства (чтобы вам было удобнее копировать). Будет хорошо, если в своём решении вы разнесёте их по разным файлам.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<i>Исходное задание: https://github.com/netology-code/ra16-homeworks/tree/master/router/menu</i>
